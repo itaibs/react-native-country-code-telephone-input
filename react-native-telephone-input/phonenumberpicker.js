@@ -270,7 +270,7 @@ class PhoneNumberPicker extends React.Component {
                      ref={textInputPhoneNumber => this.textInputPhoneNumber = textInputPhoneNumber}
                      underlineColorAndroid="transparent"
                      onChangeText={this.PhoneChanged.bind(this)}
-                     placeholder=" Enter your phone number"
+                     placeholder="Phone number"
                      value={this.PhoneNumberFormatAsYouType()}
                      autoFocus={true}
                      keyboardType="phone-pad"/>
