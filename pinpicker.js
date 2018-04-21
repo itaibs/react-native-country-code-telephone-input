@@ -11,6 +11,7 @@ import {
    TextInput,
    View,
 }  from 'react-native';
+import PropTypes from 'prop-types';
 
 import RegisterAPI    from '../../lib/libregisterapi'
 import FilledButton   from '../filledbutton'
@@ -131,8 +132,8 @@ class PinPicker extends React.Component {
 }
 
 PinPicker.PropTypes = {
-    onChangePin: React.PropTypes.func.isRequired,
-    numDigits: React.PropTypes.number,
+    onChangePin: PropTypes.func.isRequired,
+    numDigits: PropTypes.number,
 }
 
 PinPicker.defaultProps = {
