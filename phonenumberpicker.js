@@ -12,6 +12,7 @@ import {
     View,
     TouchableOpacity,
 }  from 'react-native';
+import PropTypes from 'prop-types';
 
 
 import { parse, format, asYouType } from 'libphonenumber-js'
@@ -284,8 +285,8 @@ class PhoneNumberPicker extends React.Component {
 }
 
 PhoneNumberPicker.PropTypes = {
-    onChange: React.PropTypes.Function,
-    countryHint: React.PropTypes.Object,
+    onChange: PropTypes.Function,
+    countryHint: PropTypes.Object,
 }
 
 PhoneNumberPicker.defaultProps = {
